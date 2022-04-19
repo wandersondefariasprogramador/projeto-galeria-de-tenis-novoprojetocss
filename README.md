@@ -1,95 +1,106 @@
 # projeto-galeria-de-tenis-novoprojetocss
 
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galeria dos Sneakers</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <!-- Cabeçalho -->
-    <header>
-      <h1>Galeria dos Sneakers</h1>
-    </header>
-    <!-- Grid de produtos -->
-    <main class="container">
-      <section class="products-container">
-        <div class="card">
-          <div class="product-image" id="img-1"></div>
-          <h3>Sneaker 1</h3>
-          <p>Este sneaker é muito bom pelo fato de...</p>
-          <p>
-            R$
-            <span class="bold">129,99</span>
-          </p>
-          <a href="#" class="btn">Comprar</a>
-        </div>
-        <div class="card">
-          <div class="product-image" id="img-2"></div>
-          <h3>Sneaker 2</h3>
-          <p>Este sneaker é muito bom pelo fato de...</p>
-          <p>
-            R$
-            <span class="bold">129,99</span>
-          </p>
-          <a href="#" class="btn">Comprar</a>
-        </div>
-        <div class="card">
-          <div class="product-image" id="img-3"></div>
-          <h3>Sneaker 3</h3>
-          <p>Este sneaker é muito bom pelo fato de...</p>
-          <p>
-            R$
-            <span class="bold">129,99</span>
-          </p>
-          <a href="#" class="btn">Comprar</a>
-        </div>
-        <div class="card">
-          <div class="product-image" id="img-4"></div>
-          <h3>Sneaker 4</h3>
-          <p>Este sneaker é muito bom pelo fato de...</p>
-          <p>
-            R$
-            <span class="bold">129,99</span>
-          </p>
-          <a href="#" class="btn">Comprar</a>
-        </div>
-        <div class="card">
-          <div class="product-image" id="img-5"></div>
-          <h3>Sneaker 5</h3>
-          <p>Este sneaker é muito bom pelo fato de...</p>
-          <p>
-            R$
-            <span class="bold">129,99</span>
-          </p>
-          <a href="#" class="btn">Comprar</a>
-        </div>
-        <div class="card">
-          <div class="product-image" id="img-6"></div>
-          <h3>Sneaker 6</h3>
-          <p>Este sneaker é muito bom pelo fato de...</p>
-          <p>
-            R$
-            <span class="bold">129,99</span>
-          </p>
-          <a href="#" class="btn">Comprar</a>
-        </div>
-      </section>
-    </main>
-    <!-- Rodapé -->
-    <footer>
-      <p>
-        <span class="bold">Galeria dos Sneakers</span>
-        &copy; 2022
-      </p>
-      <br>
-      <P>Foi Desenvolvido POR WANDERSON DE FARIAS</P>
-      <br>
-      <img src="./img/FOTO WANDERSON.jpg" alt="width="320 height="205">
-    </footer>
-  </body>
-</html>
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+  background-color:blue;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+
+/* Grid de produtos */
+.container {
+  background-color: #eee;
+  min-height: 60vh;
+  padding: 50px;
+}
+
+.products-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 31%;
+  margin: 1% 1%;
+  display: inline-block;
+  padding: 15px;
+}
+
+.product-image {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+#img-1 {
+  background-image: url('../img/tenis1.jpg');
+}
+
+#img-2 {
+  background-image: url('../img/tenis2.jpg');
+}
+
+#img-3 {
+  background-image: url('../img/tenis3.jpg');
+}
+
+#img-4 {
+  background-image: url('../img/tenis4.jpg');
+}
+
+#img-5 {
+  background-image: url('../img/tenis5.jpg');
+}
+
+#img-6 {
+  background-image: url('../img/tenis6.jpg');
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: blue;
+  font-size: 24px;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: blue;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color:blueviolet;
+}
+
+/* Rodapé */
+footer {
+  background-color: blue;
+  text-align: center;
+  padding: 80px;
+  color: #fff;
+}
